@@ -1,0 +1,28 @@
+modLoader="javafml"
+loaderVersion="[36,)"
+license="All rights reserved"
+issueTrackerURL="https://github.com/coderslabs/Forge-Example-Mod/issues"
+[[mods]]
+modId="tutorialforge"
+version="1.0.0"
+displayName="Forge Example Mod"
+logoFile="forge.png"
+credits="JustinPlayzz, TurtyWurty"
+authors="Team Frost"
+description='''
+Example Mod!
+'''
+
+[[dependencies.tutorialforge]]
+    modId="forge"
+    mandatory=true
+    versionRange="[36,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.tutorialforge]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5, 1.17)"
+    ordering="NONE"
+    side="BOTH"
