@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "tutorialforge:block/ruby_block" }
+  }
+}

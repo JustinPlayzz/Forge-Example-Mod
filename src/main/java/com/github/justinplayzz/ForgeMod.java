@@ -1,5 +1,6 @@
 package com.github.justinplayzz;
 
+import com.github.justinplayzz.core.init.BlockInit;
 import com.github.justinplayzz.core.init.ItemInit;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -32,6 +33,7 @@ public class ForgeMod {
         bus.addListener(this::setup);
 
         ItemInit.ITEMS.register(bus);
+        BlockInit.BLOCKS.register(bus);
 
         MinecraftForge.EVENT_BUS.register(this);
     }
