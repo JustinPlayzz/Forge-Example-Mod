@@ -1,16 +1,16 @@
 modLoader="javafml"
 loaderVersion="[36,)"
 license="All rights reserved"
-issueTrackerURL="https://github.com/coderslabs/Forge-Example-Mod/issues"
+issueTrackerURL="https://github.com/coderslabs/Forge-Starter-Mod/issues"
 [[mods]]
 modId="tutorialforge"
 version="1.0.0"
-displayName="Forge Example Mod"
+displayName="Forge Starter Mod"
 logoFile="forge.png"
-credits="JustinPlayzz, TurtyWurty"
+credits="JustinPlayzz, TurtyWurty, TechnoVision"
 authors="Team Frost"
 description='''
-Example Mod!
+Starter Mod, I have used some of TechnoVision textures too :cojo:!
 '''
 
 [[dependencies.tutorialforge]]
