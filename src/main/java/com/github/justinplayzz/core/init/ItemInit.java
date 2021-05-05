@@ -5,8 +5,11 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraftforge.fml.RegistryObject;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
+
+@Mod.EventBusSubscriber(modid = ForgeMod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 
 public class ItemInit {
 
@@ -17,6 +20,6 @@ public class ItemInit {
             () -> new Item(new Item.Properties().tab(ItemGroup.TAB_MATERIALS)));
 
     //Block Items
-    public static final RegistryObject<BlockItem> RUBY_BLOCK = ITEMS.register("ruby_block.json",
+    public static final RegistryObject<BlockItem> RUBY_BLOCK = ITEMS.register("ruby_block",
             ()-> new BlockItem(BlockInit.RUBY_BLOCK.get(), new Item.Properties().tab(ItemGroup.TAB_BUILDING_BLOCKS)));
 }
