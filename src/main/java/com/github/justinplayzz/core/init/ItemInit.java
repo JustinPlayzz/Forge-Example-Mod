@@ -1,5 +1,6 @@
 package com.github.justinplayzz.core.init;
 
+import co.eltrut.differentiate.core.registrator.ItemHelper;
 import com.github.justinplayzz.ForgeMod;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -13,13 +14,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 public class ItemInit {
 
-    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS,
-            ForgeMod.MOD_ID);
+    public static final ItemHelper HELPER = ForgeMod.REGISTRATOR.getHelper(ForgeRegistries.ITEMS);
 
-    public static final RegistryObject<Item> RUBY_ITEM = ITEMS.register("ruby_item",
-            () -> new Item(new Item.Properties().tab(ItemGroup.TAB_MATERIALS)));
-
-    //Block Items
-    public static final RegistryObject<BlockItem> RUBY_BLOCK = ITEMS.register("ruby_block",
-            ()-> new BlockItem(BlockInit.RUBY_BLOCK.get(), new Item.Properties().tab(ItemGroup.TAB_BUILDING_BLOCKS)));
+    public static final RegistryObject<Item> RUBY_ITEM = HELPER.createItem("ruby_item", () -> new Item(new Item.Properties().tab(ForgeMod.FORGE_TAB)));
 }

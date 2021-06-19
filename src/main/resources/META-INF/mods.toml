@@ -26,3 +26,10 @@ Starter Mod, I have used some of TechnoVision textures too :cojo:!
     versionRange="[1.16.5, 1.17)"
     ordering="NONE"
     side="BOTH"
+
+[[dependencies.tutorialforge]]
+    modId="differentiate"
+    mandatory=true
+    versionRange="[0.3.2,)"
+    ordering="AFTER"
+    side="BOTH"
